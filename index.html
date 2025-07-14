@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla FMed - Udelar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Malla Curricular Medicina - Udelar</h1>
+        <div id="progreso-container">
+            <label>Créditos acumulados: <span id="creditos-actuales">0</span> / 741</label>
+            <div class="barra">
+                <div id="progreso-barra"></div>
+            </div>
+        </div>
+    </header>
+    <main id="malla"></main>
+
+    <section id="agregar-optativa">
+        <h2>Agregar Materia Optativa</h2>
+        <input type="text" id="nombre-optativa" placeholder="Nombre de la materia">
+        <input type="number" id="creditos-optativa" placeholder="Créditos">
+        <button onclick="agregarOptativa()">Agregar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
