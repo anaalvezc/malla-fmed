@@ -1,0 +1,33 @@
+[
+  {"id":"MIBCM","nombre":"Introducción a la Biología Celular y Molecular","anio":1,"creditos":10,"previas":[]},
+  {"id":"MIBES","nombre":"Introducción a la Bioestadística","anio":1,"creditos":5,"previas":[]},
+  {"id":"MSPHB","nombre":"Salud y Humanidades y Bioética","anio":1,"creditos":11,"previas":[]},
+  {"id":"MAT1","nombre":"Aprendizaje en Territorio 1","anio":1,"creditos":14,"previas":[]},
+  {"id":"MBCM","nombre":"Biología Celular y Molecular","anio":1,"creditos":37,"previas":["MIBCM"]},
+  {"id":"MAT2","nombre":"Aprendizaje en Territorio 2","anio":1,"creditos":8,"previas":["MAT1"]},
+
+  {"id":"MANAT","nombre":"Anatomía","anio":2,"creditos":34,"previas":["MSPHB"]},
+  {"id":"MHBIO","nombre":"Histología y Biofísica","anio":2,"creditos":11,"previas":["MBCM"]},
+  {"id":"HIST","nombre":"Histología (neuro y cardio)","anio":2,"creditos":6,"previas":["MBCM"]},
+  {"id":"BCC3N","nombre":"Neurociencias","anio":2,"creditos":21,"previas":["MBCM"]},
+  {"id":"BCC4C","nombre":"Cardiovascular y Respiratorio","anio":2,"creditos":18,"previas":["MBCM"]},
+
+  {"id":"BCC5","nombre":"Digestivo / Renal / Metabolismo / Reproducción","anio":3,"creditos":45,"previas":["MBCM","MANAT"]},
+  {"id":"BCC6","nombre":"Hematología e Inmunobiología","anio":3,"creditos":27,"previas":["MBCM"]},
+  {"id":"MC1","nombre":"Metodología Científica 1","anio":3,"creditos":18,"previas":["MIBES"]},
+
+  {"id":"M4PNA","nombre":"Medicina en el Primer Nivel de Atención","anio":4,"creditos":20,"previas":["MIBCM","MIBES","MSPHB","MAT1","MBCM","MAT2","MANAT","MHBIO","HIST","BCC3N","BCC4C","BCC5","BCC6","MC1"]},
+  {"id":"M4BCP","nombre":"Bases Científicas de la Patología","anio":4,"creditos":35,"previas":["MIBCM","MIBES","MSPHB","MAT1","MBCM","MAT2","MANAT","MHBIO","HIST","BCC3N","BCC4C","BCC5","BCC6","MC1"]},
+  {"id":"M4PED","nombre":"Pediatría","anio":4,"creditos":28,"previas":["M4PNA","M4BCP"]},
+  {"id":"M4GYN","nombre":"Ginecología y Neonatología","anio":4,"creditos":27,"previas":["M4PNA","M4BCP"]},
+
+  {"id":"MCM","nombre":"Clínica Médica","anio":5,"creditos":87,"previas":["M4PNA","M4BCP"]},
+  {"id":"MPMT","nombre":"Patología Médica y Terapéutica","anio":5,"creditos":23,"previas":["M4BCP"]},
+
+  {"id":"M6CQ","nombre":"Clínica Quirúrgica","anio":6,"creditos":58,"previas":["M4PNA","M4BCP"]},
+  {"id":"M6PQ","nombre":"Patología Quirúrgica","anio":6,"creditos":11,"previas":["M4BCP"]},
+  {"id":"M6MFC","nombre":"MFC – Salud Mental en Comunidad – Psicología Médica","anio":6,"creditos":17,"previas":["M4PNA"]},
+  {"id":"M6MC2","nombre":"Metodología Científica 2","anio":6,"creditos":24,"previas":["M4PNA","M4BCP"]},
+
+  {"id":"INTO","nombre":"Internado Rotatorio","anio":7,"creditos":146,"previas":["MCM","MPMT","M6CQ","M6PQ","M6MFC","M6MC2"]}
+]
